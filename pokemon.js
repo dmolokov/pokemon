@@ -1,16 +1,15 @@
-"use strict"
-module.exports = class Pokemon
-{
-	constructor(name, level)
-	{
-		this.name = name; this.level = level;
+'use strict'
+module.exports = class Pokemon {
+	constructor(name, level){
+		this.name = name;
+		this.level = level;
 	}
-	show()
-	{
-		console.log('Имя: ' + this.name + ', уровень: ' + this.level);
+	
+	show() {
+		console.log(`Имя: ${this.name}, уровень: ${this.level}`);
 	}
-	valueOf()
-	{
+	
+	valueOf() {
 		return this.level;
 	}
 };
