@@ -8,4 +8,8 @@ module.exports = class Pokemon {
 	show() {
 		console.log(`Имя: ${this.name}, уровень: ${this.level}`);
 	}
+	
+	valueOf() {
+		return this.level;
+	}
 };
