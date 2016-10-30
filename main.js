@@ -3,7 +3,7 @@
 const fs = require('fs');
 const Pokemon = require('./pokemon');
 const PokemonList = require('./pokemonlist');
-const pokemons = JSON.parse(fs.readFileSync('./pokemons.json', "utf8"));
+const pokemons = require('./pokemons.json');
 const objects = pokemons.map( obj => new Pokemon(obj.name, obj.level) );
 const found = new PokemonList(...objects.slice(0, 7));
 const lost = new PokemonList(...objects.slice(7));
